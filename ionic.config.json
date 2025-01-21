@@ -1,0 +1,7 @@
+{
+  "name": "GetTask_ryan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
