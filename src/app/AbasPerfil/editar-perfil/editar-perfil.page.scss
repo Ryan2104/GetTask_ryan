@@ -1,0 +1,60 @@
+.Caixa{
+ 
+    width: 90%;
+    margin: 10% auto;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 1px #003785;
+}
+
+.imagemPerfil{
+    width:30%;
+    margin-top: 4%;
+    margin-bottom:2%;
+    margin-left:35%;
+    margin-right:35%;
+    border-radius:80%;
+    border: 1px solid rgba(0, 0, 0, 0.283); 
+
+    }
+ion-title{
+    justify-content: center;
+    color: #003785;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.AlterarFoto{
+    width:6%;
+    margin-left:40%;
+    color: rgba(0, 55, 133, 0.80);
+    font-size: 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.dados{
+    color: #000000a2;
+    line-height: normal;
+    font-size: 14px;
+    word-break: break-all;
+
+}
+ion-content {
+    --overflow: auto; /* Garante que o scroll esteja habilitado */
+  }
+  
+ion-toolbar {
+    --border-width: 0; 
+    --border-style: none ; 
+  }
+
+.espacamento{
+    height: 10vh;
+}

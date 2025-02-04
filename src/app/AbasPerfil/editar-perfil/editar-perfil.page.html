@@ -1,0 +1,62 @@
+
+<ion-header [translucent]="true" >
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-icon button size="large" color="light" name="close-sharp" [routerLink]="['/tabs/tab1']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon button size="large" color="light" name="checkmark-sharp" [routerLink]="['/tabs/tab1']"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+
+        <div class="caixaImagem">
+          <ion-title size="large">Editar Perfil</ion-title>
+          <img alt="" class="imagemPerfil" src="https://img.freepik.com/psd-gratuitas/retrato-de-mulher-de-meia-idade_23-2151825931.jpg" />
+          <ion-label class="AlterarFoto">Alterar Foto</ion-label>
+      </div>
+    <ion-list class="Caixa">
+      <ion-list-header color="dark"><h4>Nome:</h4></ion-list-header>
+      <ion-item color="dark">
+        <ion-label class="dados" >Roberto Alves martins</ion-label>
+      </ion-item>
+      <ion-list-header color="dark" ><h4>Nome de Usuario:</h4></ion-list-header >
+      
+      <ion-item color="dark">
+        <ion-label class="dados">Roberto Alves martins</ion-label>
+      </ion-item>
+      
+      <ion-list-header color="dark"><h4>Bio:</h4></ion-list-header> 
+      
+      <ion-item color="dark">
+        <ion-label class="dados"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui omnis quibusdam atque eos id beatae, vitae fuga, possimus sunt facere asperiores, veritatis ipsa cupi
+          ditate ratione maxime quis deleniti nam aliquam.</ion-label>
+      </ion-item>
+      <div class="espacamento"></div>
+    </ion-list>
+ 
+
+</ion-content>
+<!-- Arrumar a rota(routerLink),uso temporário para a criação -->
+<div>
+<ion-tabs>
+  <ion-tab-bar  style="background: #003785;">
+    <ion-tab-button tab="tab1" [routerLink]="['/tabs/tab1']" style="background: #003785;border: 0px;">
+      <ion-icon  name="home-outline" color="dark"></ion-icon>
+
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2" [routerLink]="['/tabs/tab2']"style="background: #003785;border: 0px;">
+      <ion-icon  name="briefcase-outline" color="dark" style="height:40px;width: 40px;"></ion-icon>
+ 
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3"  [routerLink]="['/tabs/tab3']" style="background: #003785;"> 
+      <ion-icon  name="settings-outline" color="dark"></ion-icon>
+
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+</div>

@@ -1,0 +1,87 @@
+
+
+
+<ion-header [translucent]="true" >
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-icon button size="large" color="light" name="close-sharp" [routerLink]="['/tabs/tab1']"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon button size="large" color="light" name="checkmark-sharp" [routerLink]="['/tabs/tab1']"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <ion-header collapse="condense">
+    <ion-toolbar color="dark" >
+      <ion-title size="large" >Dados Pessoais</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <ion-list class="Caixa">
+      <br>
+      <ion-list-header color="dark"><h3>Dados Pessoais Comuns:</h3></ion-list-header>
+      <ion-item color="dark">
+        <ion-label>Nome:</ion-label>
+        <ion-label class="dados">Roberto Alves martins</ion-label>
+        <ion-icon name="create-outline" size="medium"></ion-icon>
+        
+      </ion-item>
+      <ion-item color="dark">
+        <ion-label>E-mail:</ion-label>
+        <ion-label class="dados">roberto2503&gmail.com </ion-label>
+        <ion-icon name="create-outline" size="medium"></ion-icon>
+      </ion-item >
+
+      <ion-item color="dark">
+        <ion-label>Celular:</ion-label>
+        <ion-label class="dados">(13) 99440-8310</ion-label>
+        <ion-icon name="create-outline" size="medium"></ion-icon>
+
+      </ion-item>
+      <ion-item color="dark">                  
+        <ion-label>Endereço:</ion-label>
+        <ion-label class="dados"> Rua das Flores, 123, São Paulo, SP</ion-label>
+        <ion-icon name="create-outline" size="medium"></ion-icon>
+      </ion-item>
+
+      <ion-item color="dark">
+        <h3>Dados de Identificação Profissional:</h3>
+      </ion-item>
+      <ion-item color="dark">
+        <ion-label>CNH(Opcional):</ion-label>
+        <ion-label class="dados" >12.345.678-9</ion-label>
+        <ion-icon name="create-outline" size="medium"></ion-icon>
+      </ion-item>
+     <br>
+    </ion-list>
+   
+  </div>
+
+</ion-content>
+
+
+<!-- Arrumar a rota(routerLink),uso temporário para a criação -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom" style="background: #003785;">
+    <ion-tab-button tab="tab1" [routerLink]="['/tabs/tab1']" style="background: #003785;border: 0px;">
+      <ion-icon  name="Home-outline" color="dark"></ion-icon>
+      
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2" [routerLink]="['/tabs/tab2']"style="background: #003785;border: 0px;">
+      <ion-icon  name="briefcase-outline" color="dark" style="height:40px;width: 40px;"></ion-icon>
+   
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3"  [routerLink]="['/tabs/tab3']" style="background: #003785;"> 
+      <ion-icon  name="settings-outline" color="dark"></ion-icon>
+     
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
+
+  
